@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SpeechViewComponent } from './speech-view/speech-view.component';
+import { SpeechGeneratorService } from './speech-generator.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { SpeechViewComponent } from './speech-view/speech-view.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    SpeechGeneratorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
