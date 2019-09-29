@@ -1,1 +1,6 @@
-<p>speech-view works!</p>
+<div class="SpeechViewComponent">
+    <button (click)="onClickStartButton()">Start</button>
+    <button (click)="onClickStopButton()">Stop</button>
+    <p>{{stateText}}</p>
+    <p *ngFor="let speech of speechList">{{speech}}</p>
+</div>
